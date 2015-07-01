@@ -3,16 +3,21 @@ using System.Collections;
 
 public class GameStart : MonoBehaviour {
 
-
+	public Chunk c = new Chunk();
 
 	// Use this for initialization
 	void Start () {
+	
+		makeChunk ();
 
+	}
 
-		Chunk c = gameObject.AddComponent<Chunk> ();
+	private void makeChunk(){
+
+		c.loadChunk ();
 
 
 	}
-	
+
 
 }
